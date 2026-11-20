@@ -537,6 +537,8 @@ p { margin: 0; }
 @media (max-width: 979px) { .nav__burger { display: grid; } }
 @media (min-width: 980px) { .mnav { display: none; } }
 @media (prefers-reduced-motion: reduce) { .mnav, .nav__burger span::before, .nav__burger span::after { transition: none; } }
+.case:not(.case--green) .chapter p { color: var(--muted); }
+.case:not(.case--green) .chapter h4::before { color: var(--clay); }
 .qv__more, .do__more { margin-top: 28px; font-size: 16px; }
 .qv__more a { color: var(--peach); text-underline-offset: 3px; }
 .do__more a { color: var(--clay); text-underline-offset: 3px; }
@@ -846,7 +848,7 @@ p { margin: 0; }
   </section>
 
   <!-- Porto & Douro -->
-  <section class="sec case case--green" id="porto" aria-labelledby="porto-h">
+  <section class="sec case" id="porto" aria-labelledby="porto-h">
   <svg class="bot bot--rose x x-porto" data-speed="0.14" style="--r:10deg" aria-hidden="true" focusable="false"><use href="#rose"/></svg>
   <svg class="bot bot--mon b-porto" data-speed="0.1" style="--r:20deg" aria-hidden="true" focusable="false"><use href="#mon"/></svg>
     <div class="wrap" data-group>
